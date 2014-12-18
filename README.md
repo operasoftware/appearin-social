@@ -1,4 +1,4 @@
-appearin-social
+appear-social
 ===============
 
-Repository for the appear.in Social extension
+Repository for the "Appear Social" extension. 
