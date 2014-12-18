@@ -1,0 +1,51 @@
+{
+	"manifest_version": 2,
+	"name": "Appear Social",
+	"description": "Create a personal appear.in video chatroom to share with your friend in Facebook Chat or Twitter’s ‘Direct Messages’ interface",
+	"version": "1.0",
+	"icons": {
+		"16": "img/icon-16.png",
+		"48": "img/icon-48.png",
+		"128": "img/icon-128.png"
+	},
+	"permissions": [
+		"https://appear.in/*",
+		"*://api.appear.in/*"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"*://www.facebook.com/*"
+			],
+			"css": [
+				"css/facebook.css"
+			],
+			"js": [
+				"js/bragi.js",
+				"js/http.js",
+				"js/appearin.js",
+				"js/facebook-inject.js"
+			]
+		},
+		{
+			"matches": [
+				"*://www.twitter.com/*",
+				"*://twitter.com/*"
+			],
+			"css": [
+				"css/twitter.css"
+			],
+			"js": [
+				"js/bragi.js",
+				"js/http.js",
+				"js/appearin.js",
+				"js/twitter-inject.js"
+			]
+		}
+	],
+	"background": {
+		"scripts": [
+			"js/background.js"
+		]
+	}
+}
