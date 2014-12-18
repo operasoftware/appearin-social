@@ -1,4 +1,4 @@
-window.appearin.getRandomRoom();
+window.appearin.getRandomUnusedRoomName();
 
 document.addEventListener('mouseup', function() {
 	setTimeout(hitchhikeOnVidechatButtons, 250);
@@ -14,12 +14,12 @@ var hitchhikeOnVidechatButtons = function() {
 	conversations_ = [];
 	for (var j = 0, flyout; flyout = flyouts[j]; j++) {
 		conversations_.push(flyout);
-		var buttonNotPresent = flyout.querySelectorAll('.appearin-icon').length === 0;
+		var buttonNotPresent = flyout.querySelectorAll('.appearin-facebook-button').length === 0;
 		var correctFlyout = flyout.querySelectorAll('.addToThread.button').length === 1;
 		if (buttonNotPresent && correctFlyout) {
 			var addToThreadButton = flyout.querySelector('.addToThread.button');
 			var dup = addToThreadButton.cloneNode(true);
-			dup.classList.add('appearin-icon');
+			dup.classList.add('appearin-facebook-button');
 			dup.classList.remove('videoicon');
 			dup.setAttribute('aria-label', LABEL);
 			dup.dataset.hitchhikedVideoChatButton = 'true';

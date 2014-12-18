@@ -48,12 +48,12 @@ function addThing() {
 	var bigBox = document.querySelector(".js-toolbar");
 	var tweetBoxForm = document.querySelector(".dm-tweetbox");
 	console.log(tweetBoxForm.length);
-	var count = document.querySelectorAll(".appearintwitterbutton");
+	var count = document.querySelectorAll(".appearin-twitter-button");
 	console.log(count.length);
 	if (count.length < 1) {
 		var theButton = document.createElement("button");
 		theButton.textContent = "Talk on appear.in";
-		theButton.className = "appearintwitterbutton tweet-btn";
+		theButton.className = "appearin-twitter-button tweet-btn";
 		theButton.onclick = function(event) {
 			event.stopPropagation();
 			event.preventDefault();
