@@ -36,7 +36,7 @@ document.addEventListener('mouseup', function (event) {
 	}
 	var flyout = event.target.getAncestor('.fbNubFlyout');
 	var textarea = flyout.querySelector('textarea');
-	appearin.getRandomRoom().then(function(roomName) {
+	appearin.getRandomUnusedRoomName().then(function(roomName) {
 		var message = MESSAGE.replace('$1', appearin.linkToRoom(roomName));
 		textarea.value = message;
 		textarea.focus();

@@ -35,8 +35,8 @@ var MESSAGE = 'Let’s talk on video!\n$1';
 function putLinkInChat() {
 	var theRoomName = randomRoomNameGenerator();
 	var textBox = document.querySelector("#tweet-box-dm-conversation");
-	appearin.getRandomRoom().then(function(roomName) {
-		var message = MESSAGE.replace('$1', appearin.linkToRoom(roomName));
+	appearin.getRandomUnusedRoomName().then(function(roomName) {
+		var message = MESSAGE.replace('$1', appearin.roomNameToUrl(roomName));
 		textBox.textContent = message;
 		textBox.focus();
 	});
@@ -54,8 +54,10 @@ function addThing() {
 		var theButton = document.createElement("button");
 		theButton.textContent = "Talk on appear.in";
 		theButton.className = "appearintwitterbutton tweet-btn";
-		theButton.onclick = function(e){
-			e.stopPropagation(); e.preventDefault();	putLinkInChat();
+		theButton.onclick = function(event) {
+			event.stopPropagation();
+			event.preventDefault();
+			putLinkInChat();
 		}
 		var theThing = document.createElement("div");
 		theThing.className = "tweet-box-extras";

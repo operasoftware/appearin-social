@@ -22,7 +22,6 @@
 			],
 			"js": [
 				"js/bragi.js",
-				"js/http.js",
 				"js/appearin.js",
 				"js/facebook-inject.js"
 			]
@@ -37,7 +36,6 @@
 			],
 			"js": [
 				"js/bragi.js",
-				"js/http.js",
 				"js/appearin.js",
 				"js/twitter-inject.js"
 			]
