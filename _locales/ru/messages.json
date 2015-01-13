@@ -1,0 +1,21 @@
+{
+	"extTitle": {
+		"message": "Appear Social"
+	},
+
+	"extDesc":{
+		"message": "Создавайте личные комнаты для видеочатов с вашими друзьями в appear.in прямо из чата Facebook или личных сообщений Twitter."
+	},
+
+	"extLabel":{
+		"message": "Начать видеозвонок в appear.in"
+	},
+
+	"extMessage":{
+		"message": "Давай поговорим по видео!"
+	},
+
+	"extTwitterLabel":{
+		"message": "Поговорить в appear.in"
+	}
+}
