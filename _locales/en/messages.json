@@ -1,10 +1,10 @@
 {
 	"extTitle": {
 		"message": "Appear Social"
-	}, 
-	
+	},
+
 	"extDesc":{
-		"message": "Create a personal appear.in video chatroom to share with your friend in Facebook Chat or Twitter’s ‘Direct Messages’ interface."
+		"message": "Create a personal appear.in video chatroom to share with your friend in Facebook Chat or Twitter’s Direct Messages interface."
 	},
 
 	"extLabel":{
@@ -12,7 +12,7 @@
 	},
 
 	"extMessage":{
-		"message": "Let's talk on video!"
+		"message": "Let’s talk on video!"
 	},
 
 	"extTwitterLabel":{
