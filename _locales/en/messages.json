@@ -1,0 +1,21 @@
+{
+	"extTitle": {
+		"message": "Appear Social"
+	}, 
+	
+	"extDesc":{
+		"message": "Create a personal appear.in video chatroom to share with your friend in Facebook Chat or Twitter’s ‘Direct Messages’ interface."
+	},
+
+	"extLabel":{
+		"message": "Start a video call via appear.in"
+	},
+
+	"extMessage":{
+		"message": "Let's talk on video!"
+	},
+
+	"extTwitterLabel":{
+		"message": "Talk on appear.in"
+	}
+}
