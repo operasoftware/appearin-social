@@ -2,15 +2,15 @@
 	"extDesc":{
 		"message": "Create a personal appear.in video chatroom to share with your friend in Facebook Chat or Twitter’s Direct Messages interface."
 	},
-
+	"extendedDescription": {
+		"message": "This extension adds a small button to the Facebook chat and Twitter DM interfaces. When you click this button, a link to a private appear.in conversation is generated. You can then share this link with your contact to immediately start a video conversation."
+	},
 	"extLabel":{
 		"message": "Start a video call via appear.in"
 	},
-
 	"extMessage":{
 		"message": "Let’s talk on video!"
 	},
-
 	"extTwitterLabel":{
 		"message": "Talk on appear.in"
 	}
